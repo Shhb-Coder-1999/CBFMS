@@ -33,7 +33,7 @@ Key contributions:
 
 | Directory | Description |
 |-----------|-------------|
-| [client/](./client/) | React SPA — visual strategy builder canvas + indicator library |
+| [client/](./client/) | Vue 3 + Quasar SPA — visual strategy builder canvas + indicator library |
 | [algo-processor/](./algo-processor/) | Node.js engine — evaluates strategy DAGs against live market data |
 | [user-profile/](./user-profile/) | Auth, strategy persistence, notification preferences |
 | [docs/](./docs/) | Original project documentation |
@@ -44,7 +44,7 @@ Key contributions:
 
 ```
 +--------------------------------------------------+
-|  client/  (React SPA)                            |
+|  client/  (Vue 3 + Quasar SPA)                   |
 |  Candlestick Chart | Indicator Library | Composer |
 +------------------------+-------------------------+
                          | Strategy JSON DAG
@@ -78,7 +78,7 @@ Key contributions:
 
 | Layer | Tech |
 |-------|------|
-| Frontend | React SPA |
+| Frontend | Vue 3 + Quasar SPA |
 | Backend | Node.js microservices |
 | Strategy format | JSON DAG (no code exposed to users) |
 | Notifications | Email dispatch on strategy trigger |

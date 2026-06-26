@@ -5,7 +5,7 @@
 
 ## Overview
 
-The CBFMS client is a React SPA implementing a **visual no-code strategy builder** for financial markets. Non-expert investors compose algorithmic trading strategies by dragging indicators onto a candlestick chart, defining trigger conditions via a plain-English sentence builder, and subscribing to email alerts — without writing any code.
+The CBFMS client is a **Vue 3 + Quasar SPA** implementing a visual no-code strategy builder for financial markets. Non-expert investors compose algorithmic trading strategies by dragging indicators onto a candlestick chart, defining trigger conditions via a plain-English sentence builder, and subscribing to email alerts — without writing any code.
 
 The interface is grounded in three HCI principles:
 - **Cognitive load reduction** (Sweller 1988) — implementation syntax is fully abstracted
@@ -25,9 +25,10 @@ The interface is grounded in three HCI principles:
 
 | Layer | Tech |
 |-------|------|
-| Framework | React (SPA) |
+| Framework | Vue 3 + Quasar |
+| State management | Pinia stores |
 | Charting | High-performance OHLCV canvas library |
-| Styling | CSS modules |
+| Package manager | Yarn |
 
 ## Related Repositories
 

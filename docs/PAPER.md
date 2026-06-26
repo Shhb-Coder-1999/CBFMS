@@ -225,4 +225,4 @@ The broader contribution of this work is not the system itself but the design fr
 
 ---
 
-*Manuscript prepared for submission to ACM CHI 2026. Word count: ~6,100 words.*
+*Unpublished manuscript.*

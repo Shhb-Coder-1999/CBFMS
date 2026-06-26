@@ -33,7 +33,7 @@ Key contributions:
 
 | Directory | Description |
 |-----------|-------------|
-| [client/](./client/) | Vue 3 + Quasar SPA — visual strategy builder canvas + indicator library |
+| [client/](./client/) | Vue 3 + Quasar SPA — Vue Flow strategy canvas, KlineCharts, TensorFlow.js, Polygon.io |
 | [algo-processor/](./algo-processor/) | Node.js engine — evaluates strategy DAGs against live market data |
 | [user-profile/](./user-profile/) | Auth, strategy persistence, notification preferences |
 | [docs/](./docs/) | Original project documentation |
@@ -78,7 +78,7 @@ Key contributions:
 
 | Layer | Tech |
 |-------|------|
-| Frontend | Vue 3 + Quasar SPA |
+| Frontend | Vue 3 + Quasar, Vue Flow, KlineCharts, ApexCharts, TensorFlow.js |
 | Backend | Node.js microservices |
 | Strategy format | JSON DAG (no code exposed to users) |
 | Notifications | Email dispatch on strategy trigger |

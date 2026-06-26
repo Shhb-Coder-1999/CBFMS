@@ -1,0 +1,31 @@
+import { store } from "quasar/wrappers";
+import { createPinia } from "pinia";
+import { createPersistedState } from "pinia-plugin-persistedstate";
+
+/*
+ * If not building with SSR mode, you can
+ * directly export the Store instantiation;
+ *
+ * The function below can be async too; either use
+ * async/await or return a Promise which resolves
+ * with the Store instance.
+ */
+
+export default store((/* { ssrContext } */) => {
+  const pinia = createPinia();
+  pinia.use(
+    createPersistedState({
+      auto: true,
+      storage: sessionStorage,
+    })
+  );
+  return pinia;
+});
+
+// export const resetAllStores = () => {
+//   sessionStorage.clear();
+//   pinia._s.forEach((store) => store.$reset());
+// };
+
+export { default as useFinancialMarket } from "./FinancialMarket.store";
+export { default as useAuthStore } from "./Auth.store";

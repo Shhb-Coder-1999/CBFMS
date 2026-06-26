@@ -1,0 +1,44 @@
+{
+  "name": "quasar-project",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "productName": "Quasar App",
+  "author": "shahab.shafiee <Shhb.Coder@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@polygon.io/client-js": "^7.3.2",
+    "@quasar/extras": "^1.16.9",
+    "@tensorflow/tfjs": "^4.15.0",
+    "@vue-flow/background": "^1.2.0",
+    "@vue-flow/core": "^1.27.1",
+    "@vue-flow/minimap": "^1.2.0",
+    "apexcharts": "^3.45.1",
+    "axios": "^1.6.2",
+    "klinecharts": "^9.6.0",
+    "pinia": "^2.0.11",
+    "pinia-plugin-persistedstate": "^3.2.0",
+    "quasar": "^2.14.1",
+    "trading-vue-js": "^1.0.2",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0",
+    "vue-tradingview-widgets": "^1.2.4",
+    "vue3-apexcharts": "^1.4.4"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.3.0",
+    "@quasar/vite-plugin": "^1.6.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.14",
+    "sass": "^1.33.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

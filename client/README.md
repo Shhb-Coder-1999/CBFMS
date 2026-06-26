@@ -5,38 +5,42 @@
 
 ## Overview
 
-The CBFMS client is a **Vue 3 + Quasar SPA** implementing a visual no-code strategy builder for financial markets. Non-expert investors compose algorithmic trading strategies by dragging indicators onto a candlestick chart, defining trigger conditions via a plain-English sentence builder, and subscribing to email alerts — without writing any code.
+The CBFMS client is a **Vue 3 + Quasar SPA** implementing a visual no-code strategy builder for financial markets. Non-expert investors compose algorithmic trading strategies using a node-based visual flowchart canvas, view live candlestick charts, and subscribe to email alerts — without writing any code.
 
 The interface is grounded in three HCI principles:
 - **Cognitive load reduction** (Sweller 1988) — implementation syntax is fully abstracted
-- **Direct manipulation** (Shneiderman 1983) — all authoring happens on the chart canvas
+- **Direct manipulation** (Shneiderman 1983) — strategy logic expressed as a visual flow graph
 - **Progressive disclosure** (Norman 2013) — indicators reveal parameters on demand
 
-## Interface Layout
+## Key Features
 
-| Zone | Function |
-|------|----------|
-| Candlestick chart (center) | Primary authoring canvas — indicators render as overlays |
-| Indicator library (left) | 24 indicators in 4 semantic categories; drag-to-add |
-| Parameter panel (right, contextual) | Sliders/dropdowns for period, source, color — live preview |
-| Condition composer (modal) | Visual sentence builder: [Indicator A] [operator] [value] |
+- **Visual flowchart builder** (Vue Flow) — strategy nodes connected by edges, no code required
+- **Candlestick charts** (KlineCharts + ApexCharts + TradingView widgets) — live price data
+- **Client-side ML** (TensorFlow.js) — on-device signal processing and pattern detection
+- **Market data** via Polygon.io API
+- **Persistent state** with Pinia + pinia-plugin-persistedstate
 
 ## Tech Stack
 
 | Layer | Tech |
 |-------|------|
-| Framework | Vue 3 + Quasar |
-| State management | Pinia stores |
-| Charting | High-performance OHLCV canvas library |
+| Framework | Vue 3 + Quasar 2 |
+| Visual strategy builder | Vue Flow (`@vue-flow/core`) |
+| Candlestick charts | KlineCharts + ApexCharts + trading-vue-js |
+| Market data widgets | vue-tradingview-widgets |
+| Market data API | Polygon.io (`@polygon.io/client-js`) |
+| ML | TensorFlow.js |
+| State management | Pinia + pinia-plugin-persistedstate |
+| Build tool | Vite (`@quasar/app-vite`) |
 | Package manager | Yarn |
 
 ## Related Repositories
 
 | Repo | Role |
 |------|------|
-| [algoProcessor](../algoProcessor) | Strategy execution engine |
-| [userProfile](../userProfile) | Auth, strategy persistence, notification preferences |
-| [Documentation](../Documentation) | System design docs + CHI 2026 paper |
+| [algo-processor/](../algo-processor/) | Strategy execution engine |
+| [user-profile/](../user-profile/) | Auth, strategy persistence, notification preferences |
+| [docs/](../docs/) | System design docs + CHI 2026 paper |
 
 ## Academic Paper
 
